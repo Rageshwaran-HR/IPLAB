@@ -1,0 +1,29 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <servlet>
+        <servlet-name>ShoppingCartServlet</servlet-name>
+        <servlet-class>com.example.ShoppingCartServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>ShoppingCartServlet</servlet-name>
+        <url-pattern>/ShoppingCartServlet</url-pattern>
+    </servlet-mapping>
+
+    <context-param>
+        <param-name>userId</param-name>
+        <param-value>user123</param-value>
+    </context-param>
+    <context-param>
+        <param-name>password</param-name>
+        <param-value>pass123</param-value>
+    </context-param>
+    <context-param>
+        <param-name>creditCardNumber</param-name>
+        <param-value>1234-5678-9012-3456</param-value>
+    </context-param>
+</web-app>

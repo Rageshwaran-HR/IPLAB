@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Squares of Numbers</title>
+</head>
+<body>
+
+<h2>Squares of First 10 Numbers</h2>
+<ul id="squaresList"></ul>
+
+<script>
+    const squaresList = document.getElementById('squaresList');
+
+    for (let i = 1; i <= 10; i++) {
+        const square = i * i;
+        const listItem = document.createElement('li');
+        listItem.textContent = `Square of ${i} is ${square}`;
+        squaresList.appendChild(listItem);
+    }
+</script>
+
+</body>
+</html>

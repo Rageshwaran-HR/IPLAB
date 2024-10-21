@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="sports.xsl"?>
+<sports>
+    <sport name="Soccer" type="team">
+        <description>A team sport played with a spherical ball between two teams of eleven players.</description>
+        <players>11</players>
+    </sport>
+    <sport name="Basketball" type="team">
+        <description>A team sport where two teams, usually of five players each, oppose each other on a rectangular court.</description>
+        <players>5</players>
+    </sport>
+    <sport name="Tennis" type="individual">
+        <description>A racket sport that can be played individually against a single opponent or between two teams of two players each.</description>
+        <players>1 or 2</players>
+    </sport>
+    <sport name="Swimming" type="individual">
+        <description>An individual or team racing sport that requires the use of one's entire body to move through water.</description>
+        <players>1</players>
+    </sport>
+    <sport name="Cricket" type="team">
+        <description>A bat-and-ball game played between two teams of eleven players on a circular or oval field.</description>
+        <players>11</players>
+    </sport>
+</sports>

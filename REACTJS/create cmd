@@ -1,0 +1,2 @@
+npx create-react-app simple-event-example
+cd simple-event-example

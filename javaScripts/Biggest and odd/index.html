@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Check</title>
+    <script>
+        function findBiggestNumber(num1, num2, num3) {
+            return Math.max(num1, num2, num3);
+        }
+
+        function checkOddOrEven(num) {
+            return (num % 2 === 0) ? `${num} is even.` : `${num} is odd.`;
+        }
+
+        function runChecks() {
+            const number1 = parseFloat(prompt("Enter the first number:"));
+            const number2 = parseFloat(prompt("Enter the second number:"));
+            const number3 = parseFloat(prompt("Enter the third number:"));
+
+            const biggest = findBiggestNumber(number1, number2, number3);
+            alert(`The biggest number is: ${biggest}`);
+
+            const numberToCheck = parseFloat(prompt("Enter a number to check if it is odd or even:"));
+            alert(checkOddOrEven(numberToCheck));
+        }
+    </script>
+</head>
+<body onload="runChecks()">
+    <h1>Number Check</h1>
+    <p>Check the console for results!</p>
+</body>
+</html>

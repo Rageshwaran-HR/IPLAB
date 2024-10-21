@@ -1,0 +1,13 @@
+
+CREATE TABLE student_marks (
+    student_id VARCHAR(50),
+    subject VARCHAR(50),
+    marks INT
+);
+
+INSERT INTO student_marks (student_id, subject, marks) VALUES 
+('student1', 'Math', 85),
+('student1', 'Science', 90),
+('student2', 'Math', 78),
+('student2', 'Science', 88);
+

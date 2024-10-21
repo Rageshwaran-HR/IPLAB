@@ -1,0 +1,13 @@
+mkdir opinion_service
+cd opinion_service
+
+
+npm init -y
+
+
+npm install express body-parser cors
+ 
+
+ run:::---node app.js
+curl -X POST http://localhost:3000/submit-opinion -H "Content-Type: application/json" -d '{"product": "Smartphone", "opinion": "Great battery life!"}'
+curl http://localhost:3000/opinions

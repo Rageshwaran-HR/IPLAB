@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DHTML Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            transition: background-color 0.5s; /* Smooth transition for background color */
+        }
+        #dynamicText {
+            margin: 20px 0;
+            display: none; /* Initially hidden */
+        }
+        #dynamicImage {
+            width: 300px; /* Set a width for the image */
+            height: auto; /* Maintain aspect ratio */
+            transition: opacity 0.5s; /* Smooth transition for image opacity */
+        }
+    </style>
+    <script>
+        function toggleText() {
+            const textElement = document.getElementById('dynamicText');
+            if (textElement.style.display === 'none') {
+                textElement.style.display = 'block'; // Show text
+            } else {
+                textElement.style.display = 'none'; // Hide text
+            }
+        }
+
+        function changeBackground() {
+            const colors = ['lightblue', 'lightgreen', 'lightcoral', 'lightgoldenrodyellow', 'lightpink'];
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            document.body.style.backgroundColor = randomColor; // Change background color
+        }
+
+        function changeImage() {
+            const images = [
+                'https://via.placeholder.com/300x200?text=Image+1',
+                'https://via.placeholder.com/300x200?text=Image+2',
+                'https://via.placeholder.com/300x200?text=Image+3'
+            ];
+            const randomImage = images[Math.floor(Math.random() * images.length)];
+            document.getElementById('dynamicImage').src = randomImage; // Change image source
+        }
+    </script>
+</head>
+<body>
+
+    <h1>DHTML Demo</h1>
+
+    <button onclick="toggleText()">Show/Hide Text</button>
+    <div id="dynamicText">This is some dynamic text that can be shown or hidden!</div>
+
+    <button onclick="changeBackground()">Change Background Color</button>
+
+    <button onclick="changeImage()">Change Image</button>
+    <img id="dynamicImage" src="https://via.placeholder.com/300x200?text=Image+1" alt="Dynamic Image">
+
+</body>
+</html>
