@@ -6,7 +6,7 @@
     String name = request.getParameter("name");
     String email = request.getParameter("email");
     String phone = request.getParameter("phone");
-    Part filePart = request.getPart("resume"); // Retrieves <input type="file" name="resume">
+    Part filePart = request.getPart("resume"); 
     InputStream resumeInputStream = filePart.getInputStream();
 
     String query = "INSERT INTO resumes (name, email, phone, resume) VALUES (?, ?, ?, ?)";

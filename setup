@@ -1,0 +1,14 @@
+http://localhost/phpmyadmin
+
+Set Up Apache Tomcat for JSP
+In your XAMPP installation directory, go to the folder: "xampp/tomcat/webapps/".
+Create a new folder for your JSP application, e.g., myapp.
+
+Access Your JSP File
+After placing your index.jsp file in the webapps/myapp folder and starting Tomcat, you can access it by visiting:
+
+bash
+Copy code
+http://localhost:8080/myapp/index.jsp
+
+Access the JSP file via http://localhost:8080/[yourappname]/index.jsp.

@@ -1,0 +1,5 @@
+CREATE TABLE student_marks (
+    student_id VARCHAR(50),
+    subject VARCHAR(50),
+    marks INT
+);
